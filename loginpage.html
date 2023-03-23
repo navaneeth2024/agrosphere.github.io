@@ -7,15 +7,22 @@
     <title>LoginPage</title>
     <link rel="stylesheet" href="css/loginpage.css">
 </head>
+<script>
+    function valid(){
+        var username=document.getElementById("user").value;
+        var password=document.getElementById("pass").value;
+        if(username=="agrosphere" && password=="123456"){
+            console.log("Logged in");
+            location.replace("homepage.html");
+        }
+    }
+</script>
 <body>
     <section>
-        <div class="imgBox">
-            <img src="pics/login.jpg" alt="login">
-        </div>
         <div class="contentBox">
             <div class="formBox">
                 <h2>Login</h2>
-                <form >
+                <form id="logform">
                     <div class="inputBox">
                         <span>Username</span>
                         <input type="text" name="user" id="user">
@@ -24,14 +31,19 @@
                         <span>Password</span>
                         <input type="password" name="pass" id="pass">
                     </div>
-                    <div class="inputBoxSubmit">
-                        <input type="submit" value="Sign in" name="">
-                    </div>
-                    <div class="inputBoxDont">
-                        <p>Don't Have An Account? <a href="registration.html">Sign Up</a></p>
-                    </div>
+                    <!--<div class="inputBoxSubmit">
+                        <input type="submit" value="Sign in" name="" onclick="valid()">
+                    </div>-->
+                    
                 </form>
+                <button onclick="valid()" id="inputBox">Sign in</button>
+                <div class="inputBoxDont">
+                    <p>Don't Have An Account? <a href="registration.html">Sign Up</a></p>
+                </div>
             </div>
+        </div>
+        <div class="imgBox">
+            <img src="pics/login.jpg" alt="login">
         </div>
     </section>
     <div class="ellipse1"></div>

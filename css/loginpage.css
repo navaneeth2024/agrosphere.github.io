@@ -30,7 +30,7 @@ section .imgBox img{
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
 }
 section .contentBox{
@@ -74,7 +74,7 @@ section .contentBox .formBox .inputBox input{
     background: transparent;
     border-bottom: 2px solid #bfbebe;
 }
-input[type=submit]{
+#inputBox{
     width:100%;
     padding:10px 20px;
     margin-top: 20px;
@@ -114,10 +114,10 @@ section .contentBox .formBox .inputBoxDont a{
     rotate: 70deg;
     background: linear-gradient(190.14deg, #146256 38.97%, #2B2E4A 72.96%);
 }
-@media (max-width:768px){
-    section {
+@media (max-width:620px){
+    /*section {
         position: absolute;
-        left: -10%;
+        left: -1%;
         top: -2%;
         display: flex;
         border-radius: 10px;
@@ -133,7 +133,11 @@ section .contentBox .formBox .inputBoxDont a{
         left: 0;
         width: 101%;
         height: 100%;
-    }*/
+    }*
+    /*section .imgBox img{
+        width: 20%;
+        height: 20%;
+    }
     section .contentBox {
         display: flex;
         justify-content: center;
@@ -160,5 +164,49 @@ section .contentBox .formBox .inputBoxDont a{
         rotate: 10deg;
         border-radius: 50%;
         background: linear-gradient(190.14deg, #146256 38.97%, #2B2E4A 72.96%);
+    }*/
+    section {
+        position: absolute;
+        left: -1%;
+        top: -2%;
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        height: 120vh;
+        overflow: auto;
+        opacity: 85%;
+        background-image: url("pics/login.jpg");
+    }
+    .ellipse1{
+        z-index: -1;
+        opacity: 0%;
+    }
+    section .contentBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 50%;
+        position: absolute;
+        left: 9%;
+        background:rgba(255, 0, 0, 0);
+    }
+    section .contentBox .formBox {
+        width: 100%;
+        background:rgba(255, 255, 255, 0.938);
+        padding: 10%;
+        border-radius: 5%;
+    }
+    section .imgBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        width: 100rem;
+    }
+    section .imgBox img{
+        object-fit: contain;
+        width: 100%;
+        height: 130%;
     }
 }
