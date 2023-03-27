@@ -70,9 +70,21 @@ section .contentBox .formBox .inputBox input{
     border: none;
     font-size: 16px;
     letter-spacing: 1px;
-    color: #607d8b;
+    color: #1e2529;
     background: transparent;
     border-bottom: 2px solid #bfbebe;
+}
+section .contentBox .formBox .inputBox select{
+    width:100%;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid grey;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #1e2529;
+    padding: .5rem;
+    border-radius: 100rem;
+    background: transparent;
 }
 #inputBox{
     width:100%;
