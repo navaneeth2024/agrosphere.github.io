@@ -12,11 +12,11 @@ body{
 
 section{
     position: absolute;
-    left: 22.2%;
+    left: 15%;
     top: 20%;
     display: flex;
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
     height: 60vh;
     background-color: white;
 }
@@ -108,11 +108,11 @@ section .contentBox .formBox .inputBoxDont a{
 }
 .ellipse1{
     position: absolute;
-    width: 371px;
-    height: 371px;
-    left: -180px;
-    top: -230px;
-    rotate: 10deg;
+    width: 370px;
+    height: 370px;
+    left: -200px;
+    top: -250px;
+    rotate: 12deg;
     border-radius: 50%;
     background: linear-gradient(190.14deg, #146256 38.97%, #2B2E4A 72.96%);
 }
