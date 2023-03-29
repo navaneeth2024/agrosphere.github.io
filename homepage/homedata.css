@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #003329;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.sell{
+    width: 100%;
+    left: 0%;
+    height: 40vh;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    position: relative;
+    left: auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;  
+    line-height:3em;
+    letter-spacing: 2px;
+}
+.sell h1{
+    font-size: 4em;
+    font-weight: 500;
+    position: relative;
+    left: 6%;
+}
+.sell p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.sell button{
+    width: 30%; 
+    height: 40px;
+    border-radius: 150px;
+    font-weight: 500; font-style: bold; font-size: 1em;
+    background: #53C8A8;
+    color: white;
+    position: relative;
+    left: 33%;
+}
+.sell button:hover{
+    color: #53C8A8;
+    background: white;
+    border: 2px solid #53C8A8;
+    transform: scale(1.05);
+    transition: .5s;
+    cursor: pointer;
+}
+.sellpic{
+    height: 100%;
+    width: 40%;
+    padding: 10px 10px;
+    object-fit: fill;
+    margin-left: 50px;
+    
+}
+.sellpic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.buy{
+    width: 100%;
+    left: 0%;
+    top: 10%;
+    height: 40vh;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    position: relative;
+    left: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    color: white;  
+    line-height:3em;
+    letter-spacing: 2px;
+}
+.buy h1{
+    font-size: 4em;
+    font-weight: 500;
+    position: relative;
+    left: 6%;
+}
+.buy p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.buy button{
+    width: 30%; 
+    height: 40px;
+    border-radius: 150px;
+    font-weight: 500; font-style: bold; font-size: 1em;
+    background: #53C8A8;
+    color: white;
+    position: relative;
+    left: 33%;
+}
+
+.buypic{
+    height: 100%;
+    width: 40%;
+    padding: 10px 10px;
+    object-fit: fill;
+    
+    
+}
+.buypic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.container{
+    width: 90%;
+    position: relative;
+    left: 4%; top: 2%;
+    height: 50vh;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    padding: 10px 10px 10px;
+    outline: 2px solid white; border-radius: 30px;
+}
+.container button{
+    color: white;
+    background: #03C988;
+    letter-spacing: 5px; font-size: larger; font-weight: 600;
+    width: 10%; height: 10vh; border-radius: 10px;
+}
+.container button:hover{
+    outline: 2px solid #03C988;
+    background: white;
+    color: #03C988;
+    
+}
+.service{
+    outline: 1px solid black;
+    width: 15%;
+    height: 30vh;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 1.2em; font-weight: 500;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #359381;
+    padding: 10px 0;
+    overflow: hidden;
+    height: 20vh;
+  }
+  
+  footer .footercontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer .col-md-4 {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  footer h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    left: 25%;
+  }
+  
+  footer p {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    left: -10%;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+    list-style: none;
+    float: left;
+    padding: 10px;
+    
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  footer ul li a:hover {
+    color: #3D3D3D;
+  }
+  
+  footer hr {
+    border-top: 1px solid white;
+   width: 100%;
+  }
+  
+ 
+
+  /* Copyright notice */
+  footer p:last-child {
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    
+  }
+  
