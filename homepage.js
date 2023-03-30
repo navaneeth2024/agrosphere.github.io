@@ -12,3 +12,10 @@ window.addEventListener('scroll',()=>{
     /* hill4.style.left=value*-1.5+'px';
     hill1.style.top=value*.7+'px';  */
 });
+
+function toggle(){
+    var blur=document.getElementById('blur');
+    blur.classList.toggle('active');
+    var popup=document.getElementById('popup');
+    popup.classList.toggle('active');
+}

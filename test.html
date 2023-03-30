@@ -5,21 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="homepage.css">
-    <style>
-        a{
-            text-decoration: none;
-            color: black;
-        }
-
-    </style> 
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <marquee behavior="scrolling" direction="left" scrollamount="12"><i><h1>This is a temporary homepage!!!</h1></i></marquee>
-    <h2><a href="loginpage.html">&ltBack</a></h2>
-    <h2><a href="index.html">&ltHome</a></h2>
-    <div class="container">
-        <div class="circle">
-        </div>
+    <div class="container" id="blur">
+        <h2>Hello there!</h2>
+        <img src="pics/image 6.png" alt="">
+        <a href="#" onclick="toggle()">Click Here</a>
+    </div>
+    <div id="popup">
+        <h2>Oops!</h2>
+        <p>Please login to continue</p>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <script>
+        function toggle(){
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup=document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

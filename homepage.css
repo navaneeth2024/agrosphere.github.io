@@ -4,7 +4,7 @@ navbar #146256
 bg #18332F
 btn #53C8A8
 vdo #359381
-*/
+*/ 
 *{
   margin: 0;
   padding: 0;
@@ -103,7 +103,65 @@ header{
   font-weight: 300;
 }
 
-
+/* for crops */
+.know{
+  width: 100%;
+  left: 0%;
+  height: 40vh;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  position: relative;
+  left: auto;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: white;  background: #003329;
+  line-height:3em;
+  letter-spacing: 2px;
+}
+.know h1{
+  font-size: 3.8em;
+  font-weight: 500;
+  position: relative;
+  left: 5%;
+  width: 78%;
+  text-align: center;
+  line-height: 1em;
+}
+.know button{
+  width:20%; 
+  height: 40px;
+  border-radius: 150px;
+  font-weight: 500; font-style: bold; font-size: 1em;
+  background: #53C8A8;
+  color: white;
+  position: relative;
+  margin-top: 5%;
+  left: 34%;
+}
+.know button:hover{
+  color: #53C8A8;
+  background: white;
+  border: 2px solid #53C8A8;
+  transform: scale(1.05);
+  transition: .5s;
+  cursor: pointer;
+}
+.knowpic{
+  height: 100%;
+  width: 35%;
+  padding: 10px 10px;
+  object-fit: fill;
+  margin-left: 50px;
+  
+}
+.knowpic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+/* for crops end */
 .sell{
     width: 100%;
     left: 0%;
@@ -149,7 +207,7 @@ header{
 }
 .sellpic{
     height: 100%;
-    width: 40%;
+    width: 35%;
     padding: 10px 10px;
     object-fit: fill;
     margin-left: 50px;
@@ -177,6 +235,9 @@ header{
     color: white;  background: #003329;
     line-height:3em;
     letter-spacing: 2px;
+}
+.buytext{
+  position: relative; left: -05%;
 }
 .buy h1{
     font-size: 4em;
@@ -208,7 +269,7 @@ header{
 }
 .buypic{
     height: 100%;
-    width: 40%;
+    width: 35%;
     padding: 10px 10px;
     object-fit: fill;
     
@@ -220,6 +281,7 @@ header{
     object-fit: cover;
     border-radius: 50px;
 }
+
 .container{
     background: #003329;
     width: 90%;
