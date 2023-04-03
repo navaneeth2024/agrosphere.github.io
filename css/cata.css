@@ -33,6 +33,7 @@ header{
   justify-content: flex-start;
   align-items: center;
   z-index: 100;
+  /* border-bottom: 2px solid#146256; */
 }
 
 .logo{
@@ -64,6 +65,7 @@ header{
 /* body contents */
 .main{  
   margin: 2%;
+  margin-top: -1%;
  }
  
  .card{
@@ -76,10 +78,10 @@ header{
      }
  
  .image img{
-   width: 100%;
+    width: 100%;
     height: 175px;
-   border-top-right-radius: 5px;
-   border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
  
  h1{
