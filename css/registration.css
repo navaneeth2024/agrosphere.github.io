@@ -74,7 +74,7 @@ section .contentBox .formBox .inputBox input{
     background: transparent;
     border-bottom: 2px solid #bfbebe;
 }
-input[type=submit]{
+.inputBoxSubmitBtn{
     width:100%;
     padding:10px 20px;
     margin-top: 20px;
