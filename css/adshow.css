@@ -1,0 +1,26 @@
+.card{
+    margin-top: 5%;
+    height: 335px;
+    width: 500px;
+    border: none;
+    overflow: hidden;
+}
+.card img{
+    transition: .5s ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+.infocard p{
+    font-weight: 100;
+}
+.thumbnail_images{
+    margin-top: 2%;
+}
+.thumbnail_images ul{
+    margin-left: 130px;
+}
+.thumbnail_images ul img{
+    width:60px; height: 50px;
+}

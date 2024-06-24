@@ -127,56 +127,7 @@ section .contentBox .formBox .inputBoxDont a{
     background: linear-gradient(190.14deg, #146256 38.97%, #2B2E4A 72.96%);
 }
 @media (max-width:620px){
-    /*section {
-        position: absolute;
-        left: -1%;
-        top: -2%;
-        display: flex;
-        border-radius: 10px;
-        width: 120%;
-        height: 150vh;
-        background-image: url('pics/register1');
-        overflow: auto;
-        padding: 0 25px 0 25px;
-    }
-    /*section .imgBox {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 101%;
-        height: 100%;
-    }*
-    /*section .imgBox img{
-        width: 20%;
-        height: 20%;
-    }
-    section .contentBox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 70%;
-        z-index: 1;
-        position: absolute;
-        left: 9%;
-        
-    }
-    section .contentBox .formBox {
-        width: 100%;
-        padding: 40px;
-        background: #fffffff0;
-        margin: 50px;
-    }
-    .ellipse1 {
-        position: absolute;
-        width: 371px;
-        height: 371px;
-        left: -220px;
-        top: -2000px;
-        rotate: 10deg;
-        border-radius: 50%;
-        background: linear-gradient(190.14deg, #146256 38.97%, #2B2E4A 72.96%);
-    }*/
+
     section {
         position: absolute;
         left: -1%;

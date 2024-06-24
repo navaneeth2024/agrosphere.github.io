@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset some default styles */
+body, h1, h2, h3, p, blockquote, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #69c88e;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+#hero .hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #69c88e;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#features {
+  background-color: #f2f9f5;
+}
+
+.feature {
+  display: inline-block;
+  width: 25%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+#crop-showcase {
+  background-color: #fff;
+}
+
+.crop-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.crop-item {
+  flex-basis: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.crop-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#testimonials {
+  background-color: #f2f9f5;
+  padding: 40px 0;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 45%;
+  padding: 20px;
+  vertical-align: top;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#advertise {
+  background-color: #69c88e;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+#advertise img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#newsletter {
+  background-color: #f2f9f5;
+  padding: 40px 20px;
+}
+
+#newsletter h2 {
+  color: #69c88e;
+  margin-bottom: 10px;
+}
+
+#newsletter p {
+  margin-bottom: 20px;
+}
+
+#newsletter input[type="email"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#crops">Crops</a></li>
+        <li><a href="#advertisements">Advertisements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Discover, Advertise, and Connect with Crops</h1>
+      <p>Find the perfect crops for your needs, advertise your own crops, and connect with other agriculture enthusiasts.</p>
+      <a href="#get-started" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="feature">
+      <img src="crop-database-icon.png" alt="Crop Database">
+      <h2>Extensive Crop Database</h2>
+      <p>Explore a wide range of crop details and information.</p>
+    </div>
+    <div class="feature">
+      <img src="advertise-icon.png" alt="Advertise Crops">
+      <h2>Advertise Your Crops</h2>
+      <p>Showcase your crops to potential buyers and reach a wider market.</p>
+    </div>
+    <div class="feature">
+      <img src="browse-ads-icon.png" alt="Browse Advertisements">
+      <h2>Browse Advertisements</h2>
+      <p>Discover available crops from other users and make inquiries.</p>
+    </div>
+    <div class="feature">
+      <img src="notification-icon.png" alt="Receive Notifications">
+      <h2>Receive Notifications</h2>
+      <p>Stay updated with notifications from the website admin.</p>
+    </div>
+  </section>
+
+  <section id="crop-showcase">
+    <h2>Featured Crops</h2>
+    <div class="crop-grid">
+      <div class="crop-item">
+        <img src="crop1.jpg" alt="Crop 1">
+        <h3>Crop 1</h3>
+        <p>Description of Crop 1</p>
+        <a href="#crop1-details" class="btn">Learn More</a>
+      </div>
+      <div class="crop-item">
+        <img src="crop2.jpg" alt="Crop 2">
+        <h3>Crop 2</h3>
+        <p>Description of Crop 2</p>
+        <a href="#crop2-details" class="btn">Learn More</a>
+      </div>
+      <div class="crop-item">
+        <img src="crop3.jpg" alt="Crop 3">
+        <h3>Crop 3</h3>
+        <p>Description of Crop 3</p>
+        <a href="#crop3-details" class="btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+      <img src="user1.jpg" alt="User 1">
+      <blockquote>"The crop website helped me find buyers quickly. Highly recommended!"</blockquote>
+      <cite>- John Doe</cite>
+    </div>
+    <div class="testimonial">
+      <img src="user2.jpg" alt="User 2">
+      <blockquote>"I love how easy it is to navigate and explore different crops on this website."</blockquote>
+      <cite>- Jane Smith</cite>
+    </div>
+  </section>
+
+  <section id="advertise">
+    <h2>Advertise Your Crops</h2>
+    <img src="advertise-image.jpg" alt="Advertise Crops">
+    <p>Showcase your crops to a wide audience and boost your sales.</p>
+    <a href="#get-started" class="cta-button">Get Started</a>
+  </section>
+
+  <section id="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with the latest crop news, tips, and promotions.</p>
+    <form>
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#terms">Terms of Service</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+    </ul>
+    <div class="social-icons">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</body>
+</html>

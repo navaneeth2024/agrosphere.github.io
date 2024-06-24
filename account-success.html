@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Success Page</title>
+
+    <style>
+        /* CSS for the success message and animation */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: "system-ui", sans-serif; /* Use the system UI font */
+            background-image: url('pics/success-bg-img.jpg'); /* Background image path */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+        }
+
+        /* Container styles */
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Add padding for spacing */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slight shadow */
+            width: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #success-tick {
+            width: 65px;
+            height: 65px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: tickAnimation 1.5s ease-out;
+        }
+
+        #success-message {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        @keyframes tickAnimation {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="success-tick">
+            <svg width="50" height="50" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M306 0C137.232 0 0 137.232 0 306s137.232 306 306 306 306-137.232 306-306S474.768 0 306 0zm190.306 233.132L252.587 449.85c-9.997 9.998-26.206 9.998-36.204 0l-93.164-93.164c-9.997-9.997-9.997-26.206 0-36.203l13.138-13.138c9.998-9.998 26.207-9.998 36.204 0l67.486 67.486 136.84-136.84c9.998-9.997 26.207-9.997 36.204 0l13.139 13.139c9.998 9.997 9.998 26.206 0 36.204z" />
+            </svg>
+        </div>
+        <p id="success-message">Account created successfully.</p>
+    </div>
+    <p>You will be redirected in <span id="countdown">3</span></p>
+    <script>
+        // JavaScript to redirect to another page after a delay
+        let countdown = 3; // Set the initial countdown time in seconds
+        const countdownElement = document.getElementById('countdown');
+        
+        function updateCountdown() {
+            countdown--;
+            countdownElement.textContent = countdown;
+            if (countdown <= 0) {
+                window.location.href = 'login.php'; 
+            } else {
+                setTimeout(updateCountdown, 1000); // Update the countdown every 1 second
+            }
+        }
+        
+        setTimeout(updateCountdown, 1000); // Start the countdown timer
+    </script>
+</body>
+</html>

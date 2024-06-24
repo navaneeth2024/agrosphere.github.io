@@ -1,0 +1,104 @@
+body{
+    font-family: arial;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align:justify; 
+    overflow-x: hidden;  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+main{
+    padding: 2%;
+    margin-top: 10%; margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    outline: 3px solid #178064; border-radius: 1%;
+    width: 87%;
+    }
+span#back button{
+    background: transparent;
+    border: none;
+    margin-left: -3%;
+    cursor: pointer;
+ }
+ span#back img{
+    width: 45%;
+ }
+ span#back button:hover{
+    transform: scale(1.1,1.1);
+    transition: .5s ease-out;
+ }
+.title{
+    color: rgb(25, 70, 27);  
+}
+
+
+.main h3:hover{
+    color: #146256;
+}
+.para{
+    margin-bottom: 2%;
+}
+.para p{
+    transition: .5s;
+}
+.para p:hover{
+    transform: scale(1.01);
+}
+
+
+#slideshow {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+
+.slide {
+   float: left;
+   height: 700px;
+   width: 700px;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+    
+   /* Calculate the total width on the
+ basis of number of slides */
+   width: calc(700px * 3);
+    
+   /* Specify the animation with the
+ duration and speed */
+   animation: slide 10s ease infinite;
+}
+
+
+/* Define the animation
+for the slideshow */
+
+@keyframes slide{
+    
+   /* Calculate the margin-left for
+ each of the slides */
+   20% {
+       margin-left: 0px;
+   }
+   40% {
+       margin-left: calc(-3 00px * 1);
+   }
+   60% {
+       margin-left: calc(-300px * 2);
+   }
+  
+}
+

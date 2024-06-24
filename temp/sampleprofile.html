@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        /*
+        navbar #146256
+        bg #18332F
+        btn #53C8A8
+        vdo #359381
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 0 5px 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1;
+            border-bottom: solid rgba(136, 174, 138, 0.779) 1px;
+        }
+
+        .logo {
+            font-size: 2em;
+            color: #146256;
+            pointer-events: none;
+            margin-left: -4%;
+            margin-right: 80px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #146256;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .navigation a:hover,
+        .navigation a.active {
+            background: #146256;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <!-- <img src="../pics/logo.png" alt="logo" class="logoicon"> -->
+                    <img src="https://www.logomoose.com/wp-content/uploads/2010/03/agrosphere.jpg" alt="logo" class="logoicon" height="160" width="250">
+                    <span class="logo">Agrosphere</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Catalogue</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adcard.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="userdash.php">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#foot">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

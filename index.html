@@ -4,118 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Initial HomePage</title>
-    <link rel="stylesheet" href="initialhome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Landing Home Page</title>
+    <link rel="stylesheet" href="css/index.css"> 
+    <!-- Font Awesome Cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
-<body>
-    <div class="maincontainer" id="blur">
-        <header>
-            <img src="logo.png" alt="logo" class="logoicon">
-            <h2 class="logo">Agrosphere</h2>
-            <nav class="navigation">
-                <a href="#" class="active">Home</a>
-                <a href="#" onclick="toggle()">Catalog</a>
-                <a href="#" onclick="toggle()">Shop</a>
-                <a href="loginpage.html">Login</a>
-                <a href="#foot">Contact</a>
-            </nav>
-        </header>
-        <section class="parallax">
-            <img src="hill1.png" alt="hill1" id="hill1">
-            <img src="hill2.png" alt="hill2" id="hill2">
-            <img src="hill3.png" alt="hill3" id="hill3">
-            <img src="hill4.png" alt="hill4" id="hill4">
-            <img src="hill5.png" alt="hill5" id="hill5">
-            <img src="tree.png" alt="tree" id="tree">
-            <h2 id="text">Welcome to Agrosphere</h2>
-            <img src="leaf.png" alt="leaf" id="leaf">
-            <img src="plant.png" alt="plant" id="plant">
-        </section>
-    
-        <section class="sec">
-            <h2>We did all the heavy work to bring you everything you need</h2>
-            <br><br>
-        </section>
-        <div class="container">
-            <button>Our Services</button>
-            <div class="service">
-                <img src="infoservice.svg" alt="infoservice">
-                <P>Providing every bit of information you need to know about farming.</P>
-            </div>
-            <div class="service">
-                <img src="sellservice.svg" alt="sell">
-                <P>Giving an oppurtunity to sell your products directly.</P>
-            </div>
-            <div class="service">
-                <img src="buyservice.svg" alt="buyservice">
-                <P>Buy all farming goods from one place.</P>
-            </div>
-        </div>
-    
-        <section class="know">
-            <div class="knowpic">
-                <img src="pics/knowcrop.jpg" alt="sellpic">
-            </div>
-            <div class="knowtext">
-                <h1>Get To Know Your Crops</h1>
-                <!-- <p>Join us and sell your crops without any hassle.</p> -->
-                <button onclick="toggle()">CLICK HERE</button>
-            </div>
-        </section>
-    
-        <section class="sell">
-            <div class="selltext">
-                <h1>Sell With Us</h1>
-                <p>Join us and sell your crops without any hassle.</p>
-                <button onclick="toggle()">CLICK HERE</button>
-            </div>
-            <div class="sellpic">
-                <img src="pics/sellpic1.jpg" alt="sellpic">
-            </div>
-        </section>
-    
-        <section class="buy">
-            <div class="buypic">
-                <img src="pics/buypic1.jpg" alt="sellpic">
-            </div>
-            <div class="buytext">
-                <h1>Buy From Us</h1>
-                <p>Purchase your necessary items with just a click.</p>
-                <button onclick="toggle()">CLICK HERE</button>
-            </div>
-        </section>
-        <footer id="foot">
-            <div class="footercontainer">
-              <div class="row">
-                <div class="col-md-4">
+<body> 
+  <div class="maincontainer" id="blur">
+      <header>
+          <img src="pics/logo.png" alt="logo" class="logoicon">
+          <h2 class="logo">Agrosphere</h2>
+          <nav class="navigation">
+              <a href="#" class="active">Home</a>
+              <a href="catalogdummy.php">Catalogue</a>
+              <a href="#">Advertisements</a>
+              <a href="login.php">Login</a>
+              <a href="#foot">Contact</a>
+          </nav>
+      </header>
+      <section class="parallax">
+          <img src="pics/hill1.png" alt="hill1" id="hill1">
+          <img src="pics/hill2.png" alt="hill2" id="hill2">
+          <img src="pics/hill3.png" alt="hill3" id="hill3">
+          <img src="pics/hill4.png" alt="hill4" id="hill4">
+          <img src="pics/hill5.png" alt="hill5" id="hill5">
+          <img src="pics/tree.png" alt="tree" id="tree">
+          <h2 id="text">Welcome to Agrosphere</h2>
+          <img src="pics/leaf.png" alt="leaf" id="leaf">
+          <img src="pics/plant.png" alt="plant" id="plant">
+      </section>
+        <div class="landing">
+          <section id="hero">
+              <div class="hero-content">
+                <h1>Connect , Discover and Advertise your Crops</h1>
+                <!-- <a href="#get-started" class="cta-button">Get Started</a> -->
+              </div>
+            </section>
+          
+            <section id="features">
+              <div class="feature">
+                <img src="pics/excrop.jpg" alt="Crop Database">
+                <h2>Extensive Crop Database</h2>
+                <p>Explore a wide range of crop details and information.</p>
+              </div>
+              <div class="feature">
+                <img src="pics/advertise3.jpg" alt="Advertise Crops">
+                <h2>Advertise Your Crops</h2>
+                <p>Showcase your crops to potential buyers and reach a wider market.</p>
+              </div>
+              <div class="feature">
+                <img src="pics/browse.jpg" alt="Browse Advertisements">
+                <h2>Browse Advertisements</h2>
+                <p>Discover available crops from other users and make inquiries.</p>
+              </div>
+            </section>
+          
+            <section id="crop-showcase">
+              <h2>Featured Crops</h2>
+              <div class="crop-grid">
+                <div class="crop-item">
+                  <img src="pics/pepper new.jpg" alt="Crop 1">
+                  <h3>Pepper</h3>
+                  <a href="login.php" class="btn">Learn More</a>
+                </div>
+                <div class="crop-item">
+                  <img src="pics/ruber2.jpg" alt="Crop 2">
+                  <h3>Rubber</h3>
+                  <a href="login.php" class="btn">Learn More</a>
+                </div>
+                <div class="crop-item">
+                  <img src="pics/TEA1.jpeg" alt="Crop 3">
+                  <h3>Tea</h3>
+                  <a href="login.php" class="btn">Learn More</a>
+                </div>
+              </div>
+            </section>
+      
+          
+            <section id="advertise">
+              <h2>Advertise Your Crops</h2>
+              <img src="pics/advertise.jpg" alt="Advertise Crops">
+              <p>Showcase your crops to a wide audience and boost your sales.</p>
+              <a href="login.php" class="cta-button">Get Started</a>
+            </section>
+          
+            <section id="newsletter">
+              <h2>Get in Touch with Us</h2>
+              <p>Send your feedback & suggestions to us.</p>
+              <form>
+                  <input type="text" placeholder="Enter your message" required>
+                  <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Send</button>
+              </form>
+            </section>
+
+      
+            <footer id="foot">
+              <div class="footer-content">
+                <div class="footer-section">
                   <h3>About Us</h3>
-                  <p>A brief description of your website here.</p>
+                  <p>Explore extensive crop database, showcase and advertise your crops and discover available crops from other users.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="footer-section">
                   <h3>Contact Us</h3>
-                  <p>Contact information here.</p>
+                  <p>Email: agrosphere.contact@gmail.com</p>
+                  <p>Phone: +1 123 456 7890</p>
+                  <p>Address: Amal Jyothi College of Engineering, Kanjirappally</p>
                 </div>
-                <div class="col-md-4">
+                <div class="footer-section">
                   <h3>Follow Us</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                  <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+                <div class="footer-section">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Crops</a></li>
+                    <li><a href="#">Advertisements</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                   </ul>
                 </div>
               </div>
-              <hr>
-              <p>&copy; 2023 Agrosphere. All rights reserved.</p>
-            </div>
-          </footer>
-    </div>
-    <div id="popup">
-        <a href="#" onclick="toggle()"><i class="material-icons">close</i></a>
-        <h2>Oops!</h2>
-        <p>Please login to continue</p><br>
-    </div>
-      <script src="homepage.js"></script>
+              <div class="footer-bottom">
+                <p>&copy; 2023 Agrosphere Website. All rights reserved. | Designed by Group 11 [MINI-PROJECT]</p>
+              </div>
+            </footer>           
+        </div>
+  </div>
+
+  <div id="popup">
+    <a href="#" onclick="toggle()"><i class="material-icons">close</i></a>
+    <p>Please login to continue</p><br>
+  </div>
+      <script src="js/homepage.js"></script>
+      <script>
+        function showPopup() {
+  // Get the popup element
+  var popup = document.getElementById("popup");
+
+  // Display the popup
+  popup.style.display = "block";
+}
+
+function hidePopup() {
+  // Get the popup element
+  var popup = document.getElementById("popup");
+
+  // Hide the popup
+  popup.style.display = "none";
+}
+
+      </script>
 </body>
 </html> 
+

@@ -1,0 +1,32 @@
+    /* Additional styles for responsiveness */
+    .form-group {
+        margin-bottom: 1rem;
+      }
+  
+      @media (min-width: 576px) {
+        .form-row {
+          display: flex;
+          flex-wrap: wrap;
+          margin-right: -5px;
+          margin-left: -5px;
+        }
+  
+        .form-row .form-group {
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+      }
+
+.navigation{
+    margin-left: 50%;
+}
+
+.btn{
+    background-color: rgb(0, 117, 0);
+}
+.btn:hover{
+    background-color: rgba(6, 121, 6, 0.8);
+}

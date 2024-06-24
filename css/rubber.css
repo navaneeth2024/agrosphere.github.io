@@ -71,19 +71,33 @@ header{
     text-decoration: underline solid #1a7f1f;
     font-size: 1.8em;
   }
-  section#intro{
+  div#intro{
     display: flex;
     align-items: center;
     justify-content:flex-end;
+    max-height: fit-content;
+    overflow: hidden;
+    gap: 50px;
  }
- section#intro img{
+ div.introp{
+  max-height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+ }
+ div.intropic{
+  min-width: 47vw;
+    height: 45vh;
+ }
+ div#intro img{
     width: 80%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     position: relative;
     left: -10%;
  }
- section#intro p{
+ div#intro p{
     width: 50%;
     text-align: justify;
     text-justify: inter-word;
@@ -102,8 +116,7 @@ header{
  }
  span#back button:hover{
     transform: scale(1.1,1.1);
-    transition: .5s ease-out;
- }
+    transition: .5s ease-out; }
   /* Footer styling */
 footer {
     background-color: rgb(25, 70, 27) ;
@@ -171,10 +184,60 @@ footer {
   footer p:last-child {
     color: white;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 24px; 
     text-align: center;
     position: relative;
     left: 0;
     
   }
 /* Footer styling end */
+
+#slideshow {
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+
+.slide {
+ float: left;
+ height: 700px;
+ width: 700px;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+  
+ /* Calculate the total width on the
+basis of number of slides */
+ width: calc(700px * 3);
+  
+ /* Specify the animation with the
+duration and speed */
+ animation: slide 10s ease infinite;
+}
+
+
+/* Define the animation
+for the slideshow */
+
+@keyframes slide{
+  
+ /* Calculate the margin-left for
+each of the slides */
+ 20% {
+     margin-left: 0px;
+ }
+ 40% {
+     margin-left: calc(-3 00px * 1);
+ }
+ 60% {
+     margin-left: calc(-300px * 2);
+ }
+
+}
